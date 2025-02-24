@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Employee</title>
+</head>
+<body>
+    <h2>Register Employee Details</h2>
+    <form action="addForSort" method="post">
+        <label for="id">ID: </label>
+        <input type="number" id="id" name="id" required><br><br>
+        
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="sal">Salary: </label>
+        <input type="number" id="sal" name="sal" required><br><br>
+
+        <!-- Dropdown to select sorting criteria -->
+        <label for="sortCriteria">Sort By: </label>
+        <select id="sortCriteria" name="sortCriteria" required>
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="salary">Salary</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit"><br><br>
+    </form>
+    
+    <form action="ProjectWelcomeForSort.html">
+        <input type="submit" value="Back">
+    </form>
+</body>
+</html>
